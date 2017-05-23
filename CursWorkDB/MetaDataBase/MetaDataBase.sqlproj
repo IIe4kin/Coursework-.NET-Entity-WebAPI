@@ -58,4 +58,15 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Table.sql" />
+    <Build Include="DataBase.sql" />
+    <Build Include="Server.sql" />
+    <Build Include="Column.sql" />
+    <Build Include="Philia.sql" />
+    <Build Include="FragmentalTable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="MetaDataBase.refactorlog" />
+  </ItemGroup>
 </Project>
