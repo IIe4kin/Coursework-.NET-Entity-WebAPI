@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Server]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Server_Type] NVARCHAR(MAX) NOT NULL, 
+    [OS] NVARCHAR(30) NOT NULL
+)

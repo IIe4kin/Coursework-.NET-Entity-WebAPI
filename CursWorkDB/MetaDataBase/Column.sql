@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Column]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(MAX) NOT NULL, 
+    [Table_Id] INT NOT NULL, 
+    [Type] NVARCHAR(30) NOT NULL, 
+    [Is_PK] BIT NOT NULL
+	FOREIGN KEY (Table_Id)
+	REFERENCES [Table] (Id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+)

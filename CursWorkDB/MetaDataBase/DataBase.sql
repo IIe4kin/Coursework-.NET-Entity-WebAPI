@@ -1,0 +1,17 @@
+﻿CREATE TABLE [dbo].[DataBase]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NCHAR(20) NOT NULL, 
+    [Server_Id] INT NOT NULL, 
+    [NativeConnectionString] NVARCHAR(MAX) NULL, 
+    [OleDbConnectionString] NVARCHAR(MAX) NULL, 
+    [Philia_Id] INT NOT NULL
+	FOREIGN KEY (Server_Id)
+	REFERENCES [Server] (ID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+	FOREIGN KEY (Philia_Id)
+	REFERENCES Philia (ID)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+)
